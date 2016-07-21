@@ -14,5 +14,6 @@
     "prestart": "npm install",
     "postinstall": "bower install",
     "preupdate-webdriver": "npm install"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="megaMovie" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="megaMovie" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="megaMovie" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="megaMovie" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="mainModule" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="mainModule" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="mainModule" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" ng-app="mainModule" class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title ng-bind="$state.current.name + ' - Mega Movie'">Mega Movie</title>
+    <title>Mega Movie</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/content/app.css" charset="utf-8">
+
   </head>
-  <body>
+  <body ng-controller="MovieController">
+    <!-- Make this a directive -->
+    <div class="top-bar" id="main-menu">
+       <div class="top-bar-left">
+         <h3 class="main-title">Mega Movie</h3>
+       </div>
+     </div>
+
 
     <div ui-view></div>
 
-    <script src="bower_components/angular-loader/angular-loader.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="app.js"></script>
+    <script src="bower_components/angular-loader/angular-loader.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+      <!-- Main Module -->
+    <script src="main.module.js"></script>
+    <script src="const.js"></script>
+      <!-- movie  -->
+    <script src="movies/movie.module.js"></script>
+    <!-- <script src="movies/route-config.js"></script> -->
+    <script src="movies/movie.factory.js"></script>
+    <script src="movies/movie.controller.js"></script>
+    <!-- <script src="movies/movie.directive.js"></script> -->
+
   </body>
 </html>
