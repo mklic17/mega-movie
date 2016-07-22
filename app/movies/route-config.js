@@ -7,14 +7,14 @@
         $stateProvider
         .state('search', {
           url: '/search',
-          templateUrl: 'movies/search/movie-search.html',
-          controller: MovieController,
+          templateUrl: 'movies/search/search.html',
+          controller: SearchController,
 
         })
         .state('discover', {
           url: '/discover',
-          templateUrl: 'movies/discover/movie-search.html',
-          controller: MovieController,
+          templateUrl: 'movies/discover/discover.html',
+          controller: DiscoverController,
         });
     }
 
