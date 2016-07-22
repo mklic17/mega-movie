@@ -10,11 +10,13 @@
           templateUrl: 'movies/search/search.html',
           controller: SearchController,
 
+
         })
         .state('discover', {
           url: '/discover',
           templateUrl: 'movies/discover/discover.html',
           controller: DiscoverController,
+
         });
     }
 

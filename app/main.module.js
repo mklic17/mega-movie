@@ -2,7 +2,9 @@
   angular.module('mainModule', [
     'ui.router',
     'ngResource',
-    'movie'
+    'movie',
+    'search',
+    'discover',
     ])
     .config(configFunction);
 
