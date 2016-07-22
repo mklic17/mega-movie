@@ -6,4 +6,4 @@ tmp
 .DS_Store
 Thumbs.db
 .idea
-const.js
+key-const.js
