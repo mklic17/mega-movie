@@ -21,10 +21,14 @@
 
     <div>
      <div ui-view></div>
-        <!-- We'll also add some navigation: -->
+        <!-- Will also add some navigation: -->
         <a ui-sref="search">State 1</a>
         <a ui-sref="discover">State 2</a>
     </div>
+
+
+
+
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-loader/angular-loader.min.js"></script>
@@ -41,12 +45,11 @@
     <script src="movies/movie.controller.js"></script>
 
       <!-- search -->
-    <script src="search/search.module.js"></script>
-    <script src="search/search.controller.js"></script>
+    <script src="movies/search/search.module.js"></script>
+    <script src="movies/search/search.controller.js"></script>
       <!-- discover -->
-    <script src="discover/discover.module.js"></script>
-    <script src="discover/discover.controller.module.js"></script>
-
+    <script src="movies/discover/discover.module.js"></script>
+    <script src="movies/discover/discover.controller.js"></script>
 
 
   </body>
