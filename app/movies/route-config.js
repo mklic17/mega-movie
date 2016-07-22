@@ -8,14 +8,14 @@
         .state('search', {
           url: '/search',
           templateUrl: 'movies/movie-search.html',
-          controller: MovieController,
+          controller: MovieSearchController,
           // controllerAs: 'vm',
 
         })
         .state('discover', {
           url: '/discover',
           templateUrl: 'movies/movie-search.html',
-          controller: MovieController,
+          controller: MovieDiscoverController,
         });
     }
 
