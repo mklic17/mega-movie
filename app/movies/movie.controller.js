@@ -8,7 +8,6 @@ angular
     console.log('Hello from the controller');
     movieFactory.get().$promise.then(
       movieData => {
-        debugger
         console.log(movieData);
       });
 
