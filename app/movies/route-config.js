@@ -10,7 +10,6 @@
           templateUrl: 'movies/search/search.html',
           controller: SearchController,
 
-
         })
         .state('discover', {
           url: '/discover',
