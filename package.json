@@ -2,7 +2,7 @@
   "name": "MeganoteSeed",
   "private": true,
   "version": "0.5.0",
-  "description": "A starter project for an AngularJS 1.x note-taking app.",
+  "description": "A movie collection that helps users find movies.",
   "repository": "git@github.com/xternbootcamp16/meganote-seed.git",
   "license": "MIT",
   "devDependencies": {

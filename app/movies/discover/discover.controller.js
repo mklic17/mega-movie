@@ -9,10 +9,8 @@
       const URL = `http://api.themoviedb.org/3/discover/movie?${API_KEY}`;
       $resource(URL).get().$promise.then(
         things => {
-            console.log(things);
-            var movieArray = things.results;
-            var title = things.results[0].title;
-            $scope.multipleMovie = things;
+            var x = things.results;
+            $scope.movieArray = x;
         });
     }
 }
