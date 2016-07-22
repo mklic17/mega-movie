@@ -10,6 +10,5 @@ angular
       movieData => {
         console.log(movieData);
       });
-
   }
 }
