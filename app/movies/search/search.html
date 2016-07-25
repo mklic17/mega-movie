@@ -8,7 +8,7 @@
 
     <h4 ng-bind="title"></h4>
     <p ng-bind="desc"></p>
-    <img ng-src="{{ picUrl }}"/>
+    <img ng-show="picture" ng-src="http://image.tmdb.org/t/p/w500{{picture}}}" class="movieImage"/>
 
   </div>
 </div>
