@@ -16,12 +16,14 @@
              someData => {
                var x = someData.results[0];
                var title = x.original_title;
-               var overview = x.overview;
-               var picture = call.concat(x.backdrop_path);
                $scope.title = title;
+               var overview = x.overview;
                $scope.desc = overview;
+               debugger;
                var shortcut = x.poster_path;
-               var test  = call.concat(shortcut);
+               var picture = `${IMAGE_URL}${shortcut}`;
+               console.log(picture);
+               $scope.picUrl = picture;
 
              })
 
