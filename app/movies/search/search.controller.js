@@ -17,11 +17,18 @@
 
                var title = x.original_title;
                $scope.title = title;
+
                var overview = x.overview;
                $scope.desc = overview;
+
                var shortcut = x.poster_path;
-               console.log(shortcut);
                $scope.picture = shortcut;
+
+               var rating = x.vote_average;
+               $scope.rating = rating;
+
+               var release = x.release_date;
+               $scope.release = release;
              });
 
         }
