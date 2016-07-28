@@ -1,9 +1,12 @@
 
-<button type="button" ng-click="">Popular</button>
-<button type="button" ng-click="">Recent</button>
+<button type="button" ng-click="method(1)">Popular</button>
+<button type="button" ng-click="method(2)">Recent</button>
 
-<ul class="ulThings">
+<ol class="ulThings">
   <li ng-repeat="movie in movieArray" class="listItem">
     <h5 ng-bind="movie.title"></h5>
+    <img ng-src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}}" height="75" width="50"/>
+    <!-- <p ng-bind="movie.popularity"></p> -->
+    <p>Rating: {{ movie.vote_average }} /10</p>
   </li>
-</ul>
+</ol>

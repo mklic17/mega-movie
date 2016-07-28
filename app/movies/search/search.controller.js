@@ -29,6 +29,8 @@
 
                var release = x.release_date;
                $scope.release = release;
+
+               $scope.searchContent = '';
              });
 
         }

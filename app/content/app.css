@@ -1,8 +1,11 @@
+body {
+  margin:0;
+}
 .top-bar {
   background: #333;
   height: 4%;
   text-align: center;
-  margin-top: 0px;
+
 }
 .main-title {
   color: #fff;
@@ -10,4 +13,23 @@
 .movieImage{
   width: 200px;
   height: 300px;
+}
+.content {
+  padding-top: 20px;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.changeState {
+  padding-top: 20px;
+}
+.displayMovie {
+  text-align: left;
+}
+.ulThings {
+  text-align: left;
+}
+.listItem {
+
 }
